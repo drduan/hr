@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fast Bitmap.1.1.2.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FastBitmapLib.Fakes.ShimFastBitmap">
+            <summary>FastBitmapLib.FastBitmap 的填充码类型</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.#ctor(FastBitmapLib.FastBitmap)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.ClearFastColor">
+            <summary>设置 FastBitmap.Clear(FastColor color) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.Dispose">
+            <summary>设置 FastBitmap.Dispose() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.DisposedGet">
+            <summary>设置 FastBitmap.get_Disposed() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.DisposedSetBoolean">
+            <summary>设置 FastBitmap.set_Disposed(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.EffectsGet">
+            <summary>设置 FastBitmap.get_Effects() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.EffectsSetFastBitmapImageEffects">
+            <summary>设置 FastBitmap.set_Effects(ImageEffects value) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.GetPixelInt32Int32">
+            <summary>设置 FastBitmap.GetPixel(Int32 x, Int32 y) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.HeightGet">
+            <summary>设置 FastBitmap.get_Height() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.HeightSetInt32">
+            <summary>设置 FastBitmap.set_Height(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.SaveString">
+            <summary>设置 FastBitmap.Save(String path) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.SetPixelInt32Int32FastColor">
+            <summary>设置 FastBitmap.SetPixel(Int32 x, Int32 y, FastColor c) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.ToString01">
+            <summary>设置 FastBitmap.ToString() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.WidthGet">
+            <summary>设置 FastBitmap.get_Width() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.AllInstances.WidthSetInt32">
+            <summary>设置 FastBitmap.set_Width(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ClearFastColor">
+            <summary>设置 FastBitmap.Clear(FastColor color) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ConstructorInt32Int32">
+            <summary>设置 FastBitmap.FastBitmap(Int32 width, Int32 height) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ConstructorInt32Int32FastColor">
+            <summary>设置 FastBitmap.FastBitmap(Int32 width, Int32 height, FastColor color) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.Dispose">
+            <summary>设置 FastBitmap.Dispose() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.DisposedGet">
+            <summary>设置 FastBitmap.get_Disposed() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.DisposedSetBoolean">
+            <summary>设置 FastBitmap.set_Disposed(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.EffectsGet">
+            <summary>设置 FastBitmap.get_Effects() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.EffectsSetFastBitmapImageEffects">
+            <summary>设置 FastBitmap.set_Effects(ImageEffects value) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.FromFileString">
+            <summary>设置 FastBitmap.FromFile(String path) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.GetPixelInt32Int32">
+            <summary>设置 FastBitmap.GetPixel(Int32 x, Int32 y) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.HeightGet">
+            <summary>设置 FastBitmap.get_Height() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.HeightSetInt32">
+            <summary>设置 FastBitmap.set_Height(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ImplicitOpBitmapFastBitmap">
+            <summary>设置 FastBitmap.op_Implicit(Bitmap b) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ImplicitOpFastBitmapBitmap">
+            <summary>设置 FastBitmap.op_Implicit(FastBitmap f) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.SaveString">
+            <summary>设置 FastBitmap.Save(String path) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.SetPixelInt32Int32FastColor">
+            <summary>设置 FastBitmap.SetPixel(Int32 x, Int32 y, FastColor c) 的 填充码</summary>
+        </member>
+        <member name="T:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects">
+            <summary>FastBitmapLib.FastBitmap+ImageEffects 的填充码类型</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.#ctor(FastBitmapLib.FastBitmap.ImageEffects)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.AllInstances.BoxBlurInt32">
+            <summary>设置 ImageEffects.BoxBlur(Int32 blurSize) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.AllInstances.EdgeDetection">
+            <summary>设置 ImageEffects.EdgeDetection() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.AllInstances.Invert">
+            <summary>设置 ImageEffects.Invert() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.AllInstances.LuminositySingle">
+            <summary>设置 ImageEffects.Luminosity(Single luminosityFactor) 的 填充码</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.BoxBlurInt32">
+            <summary>设置 ImageEffects.BoxBlur(Int32 blurSize) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.ConstructorFastBitmap">
+            <summary>设置 ImageEffects.ImageEffects(FastBitmap parent) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.EdgeDetection">
+            <summary>设置 ImageEffects.EdgeDetection() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.Invert">
+            <summary>设置 ImageEffects.Invert() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ShimImageEffects.LuminositySingle">
+            <summary>设置 ImageEffects.Luminosity(Single luminosityFactor) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.ToString">
+            <summary>设置 FastBitmap.ToString() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.WidthGet">
+            <summary>设置 FastBitmap.get_Width() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastBitmap.WidthSetInt32">
+            <summary>设置 FastBitmap.set_Width(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="T:FastBitmapLib.Fakes.ShimFastColor">
+            <summary>FastBitmapLib.FastColor 的填充码类型</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastColor.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.AdditionOpFastColorByte">
+            <summary>设置 FastColor.op_Addition(FastColor a, Byte b) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.AdditionOpFastColorFastColor">
+            <summary>设置 FastColor.op_Addition(FastColor a, FastColor b) 的 填充码</summary>
+        </member>
+        <member name="T:FastBitmapLib.Fakes.ShimFastColor.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastColor.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.ShimFastColor.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.EqualityOpFastColorFastColor">
+            <summary>设置 FastColor.op_Equality(FastColor a, FastColor b) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.ImplicitOpColorFastColor">
+            <summary>设置 FastColor.op_Implicit(Color c) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.ImplicitOpFastColorColor">
+            <summary>设置 FastColor.op_Implicit(FastColor c) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.InequalityOpFastColorFastColor">
+            <summary>设置 FastColor.op_Inequality(FastColor a, FastColor b) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.SubtractionOpFastColorByte">
+            <summary>设置 FastColor.op_Subtraction(FastColor a, Byte b) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.SubtractionOpFastColorFastColor">
+            <summary>设置 FastColor.op_Subtraction(FastColor a, FastColor b) 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.blackGet">
+            <summary>设置 FastColor.get_black() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.blueGet">
+            <summary>设置 FastColor.get_blue() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.cyanGet">
+            <summary>设置 FastColor.get_cyan() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.grayGet">
+            <summary>设置 FastColor.get_gray() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.greenGet">
+            <summary>设置 FastColor.get_green() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.greyGet">
+            <summary>设置 FastColor.get_grey() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.purpleGet">
+            <summary>设置 FastColor.get_purple() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.redGet">
+            <summary>设置 FastColor.get_red() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.whiteGet">
+            <summary>设置 FastColor.get_white() 的 填充码</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.ShimFastColor.yellowGet">
+            <summary>设置 FastColor.get_yellow() 的 填充码</summary>
+        </member>
+        <member name="T:FastBitmapLib.Fakes.StubFastBitmap">
+            <summary>FastBitmapLib.FastBitmap 的存根类型</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.StubFastBitmap.#ctor(System.Int32,System.Int32)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.StubFastBitmap.#ctor(System.Int32,System.Int32,FastBitmapLib.FastColor)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.StubFastBitmap.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.StubFastBitmap.InitializeStub">
+            <summary>初始化 type StubFastBitmap 的新实例</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.StubFastBitmap.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:FastBitmapLib.Fakes.StubFastBitmap.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="M:FastBitmapLib.Fakes.StubFastBitmap.ToString">
+            <summary>设置 FastBitmap.ToString() 的 存根</summary>
+        </member>
+        <member name="F:FastBitmapLib.Fakes.StubFastBitmap.ToString01">
+            <summary>设置 FastBitmap.ToString() 的 stub</summary>
+        </member>
+    </members>
+</doc>

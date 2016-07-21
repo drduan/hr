@@ -1,0 +1,4 @@
+C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\Fakes\Fast Bitmap.fakes : warning : 无法为 FastBitmapLib.FastColor 生成存根: 类型是一个值类型。
+C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\Fakes\Fast Bitmap.fakes : warning : 无法为 FastBitmapLib.Mathf 生成存根: 类型已密封。
+C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\Fakes\Fast Bitmap.fakes : warning : 无法为 FastBitmapLib.FastBitmap+ImageEffects+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\Fakes\Fast Bitmap.fakes : warning : 无法为 FastBitmapLib.Mathf 生成填充码: 类型对 exported or assembly(Fast Bitmap.1.1.2.0.Fakes) 不可见。
