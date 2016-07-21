@@ -27,7 +27,9 @@ namespace ExifWorks
     {
 
         private System.Drawing.Bitmap _Image;
-        private System.Text.Encoding _Encoding = System.Text.Encoding.UTF8;
+        private System.Text.Encoding _Encoding = System.Text.Encoding.Unicode;
+       // private System.Text.Encoding _Encoding = System.Text.Encoding.GetEncoding("gbk");
+
 
         //Type declarations;
         #region Type declarations
@@ -839,12 +841,12 @@ namespace ExifWorks
         // [altair] 13.06.2004 Created
         // 
 
-        public byte[] XPComment
+        public string XPComment
         {
             get
             {
-                //return this.GetPropertyString((int)TagNames.XPComment);
-                return this.GetPropertyByte((int)TagNames.XPComment);
+                return this.GetPropertyString((int)TagNames.XPComment);
+              //  return this.GetPropertyByte((int)TagNames.XPComment);
 
             }
             set
@@ -1255,19 +1257,19 @@ namespace ExifWorks
             else
                 return DefaultValue;
         }
-        public byte[] GetPropertyByte(Int32 PID)
-        {
-            return GetPropertyByte(PID, new Byte[] { });
-        }
+      //  public byte[] GetPropertyByte(Int32 PID)
+        //{
+          //  return GetPropertyByte(PID, new Byte[] { });
+     //   }
 
 
-        public byte[] GetPropertyByte(Int32 PID, byte[] DefaultValue)
-        {
-            if (IsPropertyDefined(PID))
-                return this._Image.GetPropertyItem(PID).Value;
-            else
-                return DefaultValue;
-        }
+     //   public byte[] GetPropertyByte(Int32 PID, byte[] DefaultValue)
+     //   {
+     //       if (IsPropertyDefined(PID))
+     //           return this._Image.GetPropertyItem(PID).Value;
+    //        else
+      //          return DefaultValue;
+     //   }
 
         // 
         // Gets specified property in raw form

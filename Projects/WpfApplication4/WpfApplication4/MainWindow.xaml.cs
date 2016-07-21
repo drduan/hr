@@ -1,4 +1,5 @@
 ﻿using System;
+//using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -6,6 +7,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Text;
 using ExifWorks;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace WpfApplication4
 {
@@ -39,17 +42,30 @@ namespace WpfApplication4
             ofd.Filter = "image file|*.jpg;*.png";
             if (ofd.ShowDialog() == true)
             {
-                //此处做你想做的事 ...=ofd.FileName; 
-
-                //MessageBox.Show("" + ofd.FileName);
                 this.ImgUrl = ofd.FileName;
-
-
+                
+            //  BitmapImage ewq = BitmapIma.;
+ System.Drawing.Image img = System.Drawing.Image.FromFile(ImgUrl);
                 ImageBrush ib = new ImageBrush();
-                //ib.ImageSource = new BitmapImage(new Uri(@"pack://application:,,,/images/image1.jpg"));
-                ib.ImageSource = new BitmapImage(new Uri(ImgUrl));
-                //ib.ImageSource = @".\images\image1.jpg";
-                //ib.SetCurrentValue();
+
+                var bitmap = new System.Drawing.Bitmap(img);
+
+                var bitmapSource = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(),
+
+                                                                                      IntPtr.Zero,
+
+                                                                                      Int32Rect.Empty,
+
+                                                                                      BitmapSizeOptions.FromEmptyOptions()
+
+                      );
+        
+               bitmap.Dispose();
+
+                //   var brush = new ImageBrush(bitmapSource);
+
+                ib.ImageSource = bitmapSource;
+
                 ib.Stretch = Stretch.Fill;
                 Imagee.Background = ib;
 
@@ -60,6 +76,8 @@ namespace WpfApplication4
 
         }
 
+   
+    
         private void AddRemark(object sender, RoutedEventArgs e)
         {
 
@@ -71,9 +89,7 @@ namespace WpfApplication4
                     textBlock.Visibility = Visibility.Visible;
                     openStatus = true;
 
-
                     string coxp = new ExifManager(@ImgUrl).XPComment;
-                    //System.Text.Encoding ascii = System.Text.Encoding.ASCII; ascii.GetString(@coxp);// pi是exif的属性
 
                     textBlock.Text = coxp;
 
@@ -100,19 +116,7 @@ namespace WpfApplication4
         /// <summary>  
         /// 从文件读取 Stream  
         /// </summary>  
-        public System.IO.Stream FileToStream(string fileName)
-        {
-            // 打开文件  
-            System.IO.FileStream fileStream = new System.IO.FileStream(fileName, System.IO.FileMode.Open, System.IO.FileAccess.Read, System.IO.FileShare.Read);
-            // 读取文件的 byte[]  
-            byte[] bytes = new byte[fileStream.Length];
-            fileStream.Read(bytes, 0, bytes.Length);
-            fileStream.Close();
-            // 把 byte[] 转换成 Stream  
-            System.IO.Stream stream = new System.IO.MemoryStream(bytes);
-            return stream;
-        }
-
+      
         private void textBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
@@ -162,16 +166,37 @@ namespace WpfApplication4
 
         }
 
+     //   EncoderParameters EncParms = new EncoderParameters(1);
         private void textBlock_TextChanged(object sender, TextChangedEventArgs e)
         {
+            String Y =textBlock.Text;
+    
+            System.Drawing.Image img = System.Drawing.Image.FromFile(ImgUrl);
+     
+            System.Drawing.Imaging.PropertyItem[] PropertyItems = img.PropertyItems;
+   
+         byte[] b  = Encoding.Unicode.GetBytes(Y+'\0');
 
-            new ExifManager(ImgUrl).SetPropertyString((int)ExifManager.TagNames.XPComment,textBlock.Text);
-            //System.Text.Encoding ascii = System.Text.Encoding.ASCII; ascii.GetString(@coxp);// pi是exif的属性
+            PropertyItem propItem36867 = img.GetPropertyItem(0x9C9C);
+          
+            propItem36867.Value = Encoding.Unicode.GetBytes(Y);
+            img.SetPropertyItem(propItem36867);
+           
+          //  string FilenameTemp = ImgUrl+"a" +".jpg";
+          // 
 
-            string asdas = textBlock.Text;
-  
+            img.Save(ImgUrl+".temp");
+      
+            img.Dispose();
+            img = null;
+            GC.Collect();
+            System.IO.File.Delete(ImgUrl);
+            System.IO.File.Move(ImgUrl + ".temp",ImgUrl);
+        
 
-            //写入exif信息
         }
+
     }
+   
+    
 }

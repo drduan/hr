@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("exiflib.csproj")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bitbug_favicon.ico")]
 
 
