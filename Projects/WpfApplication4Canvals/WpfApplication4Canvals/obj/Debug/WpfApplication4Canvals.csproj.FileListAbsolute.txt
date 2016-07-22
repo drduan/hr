@@ -14,3 +14,6 @@ c:\users\cs\documents\visual studio 2015\Projects\WpfApplication4Canvals\WpfAppl
 c:\users\cs\documents\visual studio 2015\Projects\WpfApplication4Canvals\WpfApplication4Canvals\obj\Debug\WpfApplication4Canvals.pdb
 C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4Canvals\WpfApplication4Canvals\obj\Debug\Window1.g.cs
 C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4Canvals\WpfApplication4Canvals\obj\Debug\Window1.baml
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4Canvals\WpfApplication4Canvals\bin\Debug\WpfApplication4Canvals.exe.config
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4Canvals\WpfApplication4Canvals\obj\Debug\WpfApplication4Canvals.exe
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4Canvals\WpfApplication4Canvals\obj\Debug\WpfApplication4Canvals.pdb
