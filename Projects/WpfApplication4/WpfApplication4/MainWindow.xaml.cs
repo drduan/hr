@@ -5,9 +5,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Text;
 using System.Drawing.Imaging;
-using System.IO;
-using System.Drawing;
 using System.Windows;
+using EXIF文件修改器;
+using System.Collections.Generic;
+using System.Windows.Media.Animation;
+using System.IO;
 
 namespace WpfApplication4
 {
@@ -32,9 +34,13 @@ namespace WpfApplication4
                 .textBlock_MouseLeftButtonDown), true);
             textBlock.AddHandler(TextBox.MouseLeftButtonUpEvent, new MouseButtonEventHandler(this
                 .textBlock_MouseLeftButtonUp), true);
+            //MeasureImg.Click += new EventHandler(delegate () { }); //routedeventhandler
+            //MeasureImg.AddHandler(Button.PreviewMouseDownEvent,new MouseEventHandler(DrawLine) );
 
         }
 
+
+       
         private void GetImg_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog ofd = new Microsoft.Win32.OpenFileDialog();
@@ -45,8 +51,8 @@ namespace WpfApplication4
                 this.ImgUrl = ofd.FileName;
 
                 ImageBrush ib = new ImageBrush();
-                fstream = FileToStream(ImgUrl);
-                var bitmap = BytesToBitmap(StreamToBytes(fstream));
+                fstream = IOutil.FileToStream(ImgUrl);
+                var bitmap = IOutil.BytesToBitmap(IOutil.StreamToBytes(fstream));
                 var bitmapSource = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(),
                                                                                       IntPtr.Zero,
                                                                                       Int32Rect.Empty,
@@ -74,7 +80,7 @@ namespace WpfApplication4
                     textBlock.Visibility = Visibility.Visible;
                     openStatus = true;
                     System.Drawing.Image img = System.Drawing.Image.FromStream(fstream);
-                    System.Drawing.Imaging.PropertyItem[] PropertyItems = img.PropertyItems;
+                    PropertyItem[] PropertyItems = img.PropertyItems;
                     PropertyItem propItem36867 = img.GetPropertyItem(0x9C9C);
                     textBlock.Text = ""+Encoding.Unicode.GetString(propItem36867.Value);
                 }
@@ -125,10 +131,11 @@ namespace WpfApplication4
                 System.Windows.Point p = e.GetPosition(null);
                 double ax = bBefore.X + p.X - aBefore.X;
                 double ay = bBefore.Y + p.Y - aBefore.Y;
-                if (-242d < ax && ax <= 182d + 242d && ay >= -109d && ay <= 350d + 182d)
+                if (-242d < ax && ax <= Imagee.ActualWidth + 242d && ay >= -109d && ay <= Imagee.ActualHeight + 182d)
                 {
                     Canvas.SetLeft(textBlock, ax);
                     Canvas.SetTop(textBlock, ay);
+                    
 
 
                 }
@@ -158,52 +165,38 @@ namespace WpfApplication4
 
         }
 
-        public Stream FileToStream(string fileName)
+        private void DrawLine(object sender, RoutedEventArgs e)
         {
-            // 打开文件  
-            FileStream fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read);
-            // 读取文件的 byte[]  
-            byte[] bytes = new byte[fileStream.Length];
-            fileStream.Read(bytes, 0, bytes.Length);
-            fileStream.Close();
-            fileStream.Dispose();
-            // 把 byte[] 转换成 Stream  
-            Stream stream = new MemoryStream(bytes);
-            return stream;
-        }
-        public byte[] StreamToBytes(Stream stream)
-        {
-            byte[] bytes = new byte[stream.Length];
-            stream.Read(bytes, 0, bytes.Length);
-
-            // 设置当前流的位置为流的开始  
-            stream.Seek(0, SeekOrigin.Begin);
-            return bytes;
-        }
-        public static Bitmap BytesToBitmap(byte[] Bytes)
-        {
-            MemoryStream stream = null;
-            try
-            {
-                stream = new MemoryStream(Bytes);
-                return new Bitmap((System.Drawing.Image)new Bitmap(stream));
-            }
-            catch (ArgumentNullException ex)
-            {
-                throw ex;
-            }
-            catch (ArgumentException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                stream.Close();
-            }
-
+            //var points =
+            // new List<System.Windows.Point>()
+            // {
+            //       new  System.Windows.Point(10, 10),
+            //       new  System.Windows.Point(90, 90),
+            //       new  System.Windows.Point(60, 10),
+            //       new  System.Windows.Point(250, 90),
+            //       new  System.Windows.Point(10, 10)
+            // };
+            //var sb = new Storyboard();
+            //for (int i = 0; i < points.Count - 1; i++)
+            //{
+            //    var lineGeometry = new LineGeometry(points[i], points[i]);
+            //    System.Windows.Shapes.Path path = new System.Windows.Shapes.Path();
+            //    //path.Stroke = new  System.Windows.Media.Brush();
+            //    path.StrokeThickness = 2;
+            //    path.Data = lineGeometry;
+            //    Imagee.Children.Add(path);
+            //    var animation =
+            //        new PointAnimation(points[i], points[i + 1], new Duration(TimeSpan.FromMilliseconds(1000)))
+            //        {
+            //            BeginTime = TimeSpan.FromMilliseconds(i * 1010)
+            //        };
+            //    sb.Children.Add(animation);
+            //    RegisterName("geometry" + i, lineGeometry);
+            //    Storyboard.SetTargetName(animation, "geometry" + i);
+            //    Storyboard.SetTargetProperty(animation, new PropertyPath(LineGeometry.EndPointProperty));
+            //}
+            //MouseDown += (s, we) => sb.Begin(this);
 
         }
-
-
     }
 }

@@ -15,3 +15,4 @@ c:\users\cs\documents\visual studio 2015\Projects\WpfApplication3\WpfApplication
 c:\users\cs\documents\visual studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\Newtonsoft.Json.xml
 C:\Users\cs\documents\visual studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
 C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\App.baml
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
