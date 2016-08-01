@@ -136,6 +136,7 @@ namespace WpfApplication4
                     Canvas.SetLeft(textBlock, ax);
                     Canvas.SetTop(textBlock, ay);
                     
+                    
 
 
                 }
@@ -154,9 +155,17 @@ namespace WpfApplication4
             String Y = textBlock.Text;
             System.Drawing.Image img = System.Drawing.Image.FromStream(fstream);
             System.Drawing.Imaging.PropertyItem[] PropertyItems = img.PropertyItems;
-            byte[] b = Encoding.Unicode.GetBytes(Y);
+         //   byte[] b = Encoding.Unicode.GetBytes(Y);
             PropertyItem propItem36867 = img.GetPropertyItem(0x9C9C);
-            propItem36867.Value = b;
+            //Func<string, byte[]> a = delegate(string s ) { return Encoding.Unicode.GetBytes(s); };
+            byte[] ajjm
+                ;
+            //Func<string byte[]> aBeforeeee  = (string a ) =>{ Encoding.Unicode.GetBytes(a); };
+            System.Func < string, byte[]> convert = delegate (string a) { return Encoding.Unicode.GetBytes(a); };
+
+            propItem36867.Value = convert(Y);
+
+            //Action PrintInConsole = s => Console.WriteLine(s);
             img.SetPropertyItem(propItem36867);
             img.Save(ImgUrl + ".temp.jpg");
             System.IO.File.Delete(ImgUrl);
