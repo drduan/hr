@@ -5,21 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="EXIF文件修改器" Height="350" Width="525" WindowState="Maximized">
     <Grid>
-        <Canvas  MouseLeftButtonDown="textBlock_MouseLeftButtonDown" MouseMove="textBlock_MouseMove" MouseLeftButtonUp="textBlock_MouseLeftButtonUp"  Margin="0,0,182,10"  Name="Imagee">
-            <TextBox  
-                       
-                     TextChanged="textBlock_TextChanged"  Background="YellowGreen"  x:Name="textBlock" Height="109" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0.93" Canvas.Left="31" Canvas.Top="24" Width="242" />
+        <Grid Name="Gridd"  HorizontalAlignment="Right" Margin="0,10,0,0" Width="177">
 
-        </Canvas>
-        <Grid HorizontalAlignment="Right" Margin="0,10,0,0" Width="177">
-            <Button x:Name="ImportImg" Content="导入图片" Margin="57,68,45,0" VerticalAlignment="Top"/>
-            <Button x:Name="MeasureImg" Content="添加测量" Margin="57,68,45,0" VerticalAlignment="Top"/>
+
+            <Button x:Name="MeasureImg" Content="添加测量" Margin="57,68,45,0" VerticalAlignment="Top" Click="DrawLine"/>
 
             <Button x:Name="RemarkImg"  Click="AddRemark" Content="备注" Margin="57,129,45,0" VerticalAlignment="Top"/>
-            <Button x:Name="GetImg" Click="GetImg_Click" Content="导入图片" Margin="57,0,45,99.163" VerticalAlignment="Bottom"/>
+            <Button x:Name="GetImg" Click="GetImg_Click" Content="导入图片" Margin="57,180,45,90" VerticalAlignment="Top"/>
         </Grid>
+        <Ellipse Height="50" Width="100" Margin="382,239,35,31">
+            <Ellipse.Fill>
+                <SolidColorBrush x:Name="ellipseBrush" Color="SteelBlue"/>
+            </Ellipse.Fill>
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Ellipse.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard Duration="00:00:06" RepeatBehavior="Forever">
+                                <DoubleAnimation
+                                    Storyboard.TargetProperty="(Ellipse.Width)"
+                                    Duration="0:0:3" AutoReverse="True"
+                                    FillBehavior="Stop"
+                                    RepeatBehavior="Forever"
+                                    AccelerationRatio="0.9" DecelerationRatio="0.1" From="100" To="300"/>
 
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Ellipse.Triggers>
+        </Ellipse>
+        <Canvas  MouseLeftButtonDown="textBlock_MouseLeftButtonDown" MouseMove="textBlock_MouseMove" MouseLeftButtonUp="textBlock_MouseLeftButtonUp"  Margin="5,0,182,10"  x:Name="Imagee">
+            <TextBox  
+                       
+        		TextChanged="textBlock_TextChanged"  Background="YellowGreen"  x:Name="textBlock" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0.93" Height="182" Canvas.Left="0" Width="{Binding ActualWidth, ElementName=Imagee}" />
+
+        </Canvas>
     </Grid>
 </Window>
