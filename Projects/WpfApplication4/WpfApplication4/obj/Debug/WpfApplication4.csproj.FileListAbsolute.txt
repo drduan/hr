@@ -25,3 +25,4 @@ C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.exe
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.pdb
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.Installer1.resources
