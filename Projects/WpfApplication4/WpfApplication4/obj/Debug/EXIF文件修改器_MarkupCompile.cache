@@ -4,12 +4,17 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD:Projects/WpfApplication4/WpfApplication4/obj/Debug/WpfApplication4_MarkupCompile.cache
+C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\
+WpfApplication4
+=======
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\
 EXIF文件修改器
+>>>>>>> 119209c2aee2a2bd92157e7968efec01cffe5c8a:Projects/WpfApplication4/WpfApplication4/obj/Debug/EXIF文件修改器_MarkupCompile.cache
 none
 false
 DEBUG;TRACE
-C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\App.xaml
+C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\App.xaml
 11151548125
 
 8-1194343941
