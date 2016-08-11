@@ -10,6 +10,7 @@ using EXIF文件修改器;
 using System.Collections.Generic;
 using System.Windows.Media.Animation;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace WpfApplication4
 {
@@ -18,7 +19,12 @@ namespace WpfApplication4
     /// </summary>
     public partial class MainWindow : Window
     {
-  
+
+
+
+        static string msg = "{\"name\":\"aa\"}";
+
+
         Stream fstream = null;
         private System.String ImgUrl = "";
         private bool openStatus = false;
@@ -26,21 +32,75 @@ namespace WpfApplication4
         System.Windows.Point bBefore = new System.Windows.Point(); //控件坐标
         bool isMove = false;//是否需要移动
 
+
+       public class nn
+        {
+           public string name { set; get; }
+        }
         public MainWindow()
         {
+
+
+
+            //roduct product = new Product();
+            //product.FirstName = "Apple";
+            //product.LastName = "" + new DateTime(2008, 12, 28);
+
+            //string json = JsonConvert.SerializeObject(product);
+            //Console.WriteLine(json);
+
+
+
+
+
+
+
+          
+
+
+
+            //JArray array = new JArray();
+            //array.Add("Manual text");
+            //array.Add(new DateTime(2000, 5, 23));
+
+            //JObject o = new JObject();
+            //o["MyArray"] = array;
+
+            //string json = o.ToString();
+
+
+
             InitializeComponent();
+
+
+
+
+            nn m = JsonConvert.DeserializeObject<nn>(msg);
+
+            string name = m.name.ToString();
+
+            MessageBox.Show(name);
+
+
+
+
             textBlock.Visibility = Visibility.Hidden;
             textBlock.AddHandler(TextBox.MouseLeftButtonDownEvent, new MouseButtonEventHandler(this
                 .textBlock_MouseLeftButtonDown), true);
             textBlock.AddHandler(TextBox.MouseLeftButtonUpEvent, new MouseButtonEventHandler(this
                 .textBlock_MouseLeftButtonUp), true);
             //MeasureImg.Click += new EventHandler(delegate () { }); //routedeventhandler
+            //if(DBUtil.CurdOperation())
+            //  {
+            //      MessageBox.Show("OK");
+            //  }
+
             //MeasureImg.AddHandler(Button.PreviewMouseDownEvent,new MouseEventHandler(DrawLine) );
 
         }
 
 
-       
+
         private void GetImg_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog ofd = new Microsoft.Win32.OpenFileDialog();
@@ -82,7 +142,7 @@ namespace WpfApplication4
                     System.Drawing.Image img = System.Drawing.Image.FromStream(fstream);
                     PropertyItem[] PropertyItems = img.PropertyItems;
                     PropertyItem propItem36867 = img.GetPropertyItem(0x9C9C);
-                    textBlock.Text = ""+Encoding.Unicode.GetString(propItem36867.Value);
+                    textBlock.Text = "" + Encoding.Unicode.GetString(propItem36867.Value);
                 }
                 else
                 {
@@ -135,8 +195,8 @@ namespace WpfApplication4
                 {
                     Canvas.SetLeft(textBlock, ax);
                     Canvas.SetTop(textBlock, ay);
-                    
-                    
+
+
 
 
                 }
@@ -155,13 +215,13 @@ namespace WpfApplication4
             String Y = textBlock.Text;
             System.Drawing.Image img = System.Drawing.Image.FromStream(fstream);
             System.Drawing.Imaging.PropertyItem[] PropertyItems = img.PropertyItems;
-         //   byte[] b = Encoding.Unicode.GetBytes(Y);
+            //   byte[] b = Encoding.Unicode.GetBytes(Y);
             PropertyItem propItem36867 = img.GetPropertyItem(0x9C9C);
             //Func<string, byte[]> a = delegate(string s ) { return Encoding.Unicode.GetBytes(s); };
-            byte[] ajjm
-                ;
+            //byte[] ajjm
+            ;
             //Func<string byte[]> aBeforeeee  = (string a ) =>{ Encoding.Unicode.GetBytes(a); };
-            System.Func < string, byte[]> convert = delegate (string a) { return Encoding.Unicode.GetBytes(a); };
+            System.Func<string, byte[]> convert = delegate (string a) { return Encoding.Unicode.GetBytes(a); };
 
             propItem36867.Value = convert(Y);
 

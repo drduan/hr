@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\bin\Release\ClassLibrary1.dll
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\obj\Release\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\obj\Release\ClassLibrary1.Installer1.resources
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\obj\Release\ClassLibrary1.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\obj\Release\ClassLibrary1.dll
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\ClassLibrary1\obj\Release\ClassLibrary1.pdb

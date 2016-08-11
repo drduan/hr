@@ -13,6 +13,7 @@ namespace EXIF文件修改器
     {
 
 
+
         public static Stream FileToStream(string fileName)
         {
             // 打开文件  

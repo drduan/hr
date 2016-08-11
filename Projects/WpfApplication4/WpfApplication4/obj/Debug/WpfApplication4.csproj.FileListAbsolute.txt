@@ -1,48 +1,19 @@
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe.config
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.pdb
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.g.cs
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\App.g.cs
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4_MarkupCompile.cache
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4_MarkupCompile.lref
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.baml
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.g.resources
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.Properties.Resources.resources
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csproj.GenerateResource.Cache
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.exe
-C:\Users\cs\Documents\Visual Studio 2015\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.pdb
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\EXIF文件修改器.exe.config
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\Database1.mdf
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\Database1_log.ldf
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\EXIF文件修改器.exe
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\EXIF文件修改器.pdb
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.g.cs
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器_Content.g.cs
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器_MarkupCompile.cache
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器_MarkupCompile.lref
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.baml
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.g.resources
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.Properties.Resources.resources
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe.config
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.exe
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.pdb
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.pdb
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csprojResolveAssemblyReference.cache
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.g.cs
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\App.g.cs
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4_MarkupCompile.cache
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4_MarkupCompile.lref
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.baml
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.g.resources
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.Properties.Resources.resources
-C:\Users\cc##\Desktop\hr\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csproj.GenerateResource.Cache
-=======
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.exe
 C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.pdb
-C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
-C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\obj\Debug\EXIF文件修改器.Installer1.resources
-=======
->>>>>>> 119209c2aee2a2bd92157e7968efec01cffe5c8a
->>>>>>> 2253852cbb33ac34a4b7f484eb281e8b07be3267
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Projects\Projects\WpfApplication4\WpfApplication4\bin\Debug\Newtonsoft.Json.xml
